@@ -10,6 +10,6 @@ export const useDebounce = (value, delay) => {
         return () => {
             clearTimeout(timerId)
         }
-    })
+    }, [value, delay])
     return state
 }
